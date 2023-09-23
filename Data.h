@@ -19,18 +19,28 @@ public:
 	int GetYear();
 
 	void Print();
-	void CompareData();
+	int EnterDay(Data userDate);
+	void CompareDate(Data userDate);
 
-	/*Data operator++(int x);
-	Data operator--(int x);
-	Data operator+(int x);
-	Data operator-(int x);
-	Data operator+=(int x);
-	Data operator-=(int x);
+	Data& operator+(int x);
+	Data& operator-(int x);
+
+	Data& operator++();
+	Data& operator--();
+
+	Data& operator++(int x);
+	Data& operator--(int x);
 
 
-	bool operator>();
-	bool operator<();
-	bool operator==();
-	bool operator!=();*/
+	Data& operator+=(int x);
+	Data& operator-=(int x);
+
+
+
+	void Day(Data data);
+
+	bool operator>(Data& other);
+	bool operator<(Data& other);
+	bool operator==(Data& other);
+	bool operator!=(Data& other);
 };

@@ -17,5 +17,19 @@ int main() {
 	} 
 	while (m > 12 || m < 1);
 
+	userDate.SetMounth(m);
+
+
+
+	int y;
+
+	do
+	{
+		cout << "Enter year" << endl;
+		cin >> y;
+	} while (y > 2024 || y < 777);
+
+	userDate.SetMounth(y);
+
 	
 }
